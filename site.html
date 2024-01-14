@@ -3,6 +3,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Лизун пр</title>
   <script>
+    function delete() {
+      const element = document.getElementById("but");
+element.remove();
+      const element1 = document.getElementById("but");
+element1.remove();
+    }
     // Функция для изменения заголовка
     function changeTitle(newTitle) {
       // Найти элемент с id="heading" и изменить его текст
@@ -12,7 +18,7 @@
 </head>
 <body>
   <h1 id="heading">Ты Лиза?</h1>
-  <button onclick="changeTitle('УРААААА МОЛОДЕЦ но все ровно динаху')">Да</button>
-  <button onclick="changeTitle('Кароче ладно так уж и быть динаху')">Нет</button>
+  <button onclick="changeTitle('УРААААА МОЛОДЕЦ но все ровно динаху')", onclick="delete()">Да</button>
+  <button onclick="changeTitle('Кароче ладно так уж и быть динаху')", onclick="delete()">Нет</button>
 </body>
 </html>
