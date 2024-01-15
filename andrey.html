@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* добавляем отступ между заголовком и кнопками */
+      }
+
+      .button {
+        margin: 0 10px; /* добавляем отступ между кнопками */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="p1">Ты андрюша? 🤔</h1>
+    <div class="button-container">
+      <button id="but" onclick="edit()">Да</button>
+      <button id="but1" onclick="edit1()">Нет</button>
+    </div>
+    <script>
+      function edit() {
+        document.getElementById("p1").innerHTML = "Ну и пошёл наху 😡";
+        document.getElementById("but").remove();
+        document.getElementById("but1").remove();
+      }
+
+      function edit1() {
+        document.getElementById("p1").innerHTML = "Да мне похуй все ровно иди 😒";
+        document.getElementById("but").remove();
+        document.getElementById("but1").remove();
+      }
+    </script>
+  </body>
+</html>
