@@ -36,6 +36,15 @@
       #result-image {
         max-width: 60%;
       }
+
+      #image-container1 {
+        display: none;
+        margin-top: 5px;
+      }
+
+      #result-image1 {
+        max-width: 60%;
+      }
     </style>
   </head>
   <body>
@@ -43,11 +52,21 @@
     <div class="button-container">
       <button id="but" onclick="showImage()">Да</button>
       <button id="but1" onclick="edit1()">Нет</button>
+      <button id="but2" onclick="edit2()">Отпустите андрюшу домой</button>
     </div>
     <div id="image-container">
       <img id="result-image" src="https://i.imgur.com/d44QaIb.jpeg" alt="Result" />
     </div>
+    <div id="image-container1">
+      <img id="result-image1" src="https://i.imgur.com/d44QaIb.jpeg" alt="Result" />
+    </div>
     <script>
+      function edit2() {
+document.getElementById("p1").innerHTML = "Андрюша благодарен вам за разрешение и станет вашим рабом";
+     document.getElementById("but").remove();
+        document.getElementById("but1").remove();
+      }
+      
       function showImage() {
         document.getElementById("p1").innerHTML = "А это тогда кто блять?";
         document.getElementById("but").remove();
