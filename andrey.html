@@ -27,19 +27,32 @@
       .button {
         margin: 0 10px; /* добавляем отступ между кнопками */
       }
+
+      #image-container {
+        display: none;
+        margin-top: 20px;
+      }
+
+      #result-image {
+        max-width: 100%;
+      }
     </style>
   </head>
   <body>
     <h1 id="p1">Ты андрюша? 🤔</h1>
     <div class="button-container">
-      <button id="but" onclick="edit()">Да</button>
+      <button id="but" onclick="showImage()">Да</button>
       <button id="but1" onclick="edit1()">Нет</button>
     </div>
+    <div id="image-container">
+      <img id="result-image" src="https://i.imgur.com/4G2bwz8.jpeg" alt="Result" />
+    </div>
     <script>
-      function edit() {
+      function showImage() {
         document.getElementById("p1").innerHTML = "Ну и пошёл наху 😡";
         document.getElementById("but").remove();
         document.getElementById("but1").remove();
+        document.getElementById("image-container").style.display = "block";
       }
 
       function edit1() {
