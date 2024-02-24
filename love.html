@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Люблю тебя!!!</title>
+  <script>
+    // Функция для изменения заголовка
+    function changeTitle(newTitle) {
+      // Найти элемент с id="heading" и изменить его текст
+      document.getElementById("heading").textContent = newTitle;
+      const element = document.getElementById("but1");
+element.remove();
+      const element1 = document.getElementById("but2");
+element1.remove();
+    }
+  </script>
+</head>
+<body>
+  <h1 id="heading">Ты Мира?</h1>
+  <button id="but1"; onclick="changeTitle('Если ты та самая Мира, тогда я тебя люблю!!!')">Да</button>
+  <button id="but2"; onclick="changeTitle('Если ты не Мира, то динаху))))))')">Нет</button>
+</body>
+</html>
